@@ -1,12 +1,12 @@
-typings
-**/app/**/*.map
-node_modules
-jspm_packages
-bower_components
+#typings
+#**/app/**/*.map
+#node_modules
+#jspm_packages
+#bower_components
 
 .vs
-**/*.sou
-**/*.user
-bin
-obj
-packages
+#**/*.sou
+#**/*.user
+#bin
+#obj
+#packages
