@@ -35,6 +35,7 @@
       rxjs: {
         defaultExtension: 'js'
       }
-    }
+    },
+    baseURL: '/twitch/'
   });
 })(this);
