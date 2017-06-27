@@ -1,0 +1,74 @@
+html {
+    /* keeps scollbar always visible to stop the html from jerking around when the scrollbar appears/disappears */
+    overflow-y: scroll;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+li {
+    font-size: large;
+}
+
+div.panel-heading, font-xl * {
+   font-size: x-large; 
+}
+
+a {
+    border: 0;
+    text-decoration: none;
+}
+
+a, a:link, a:focus, a:visited, a:hover, a:active {
+    color: indigo;
+}
+
+.navbar-inverse {
+    background-color: indigo;
+    color: white !important;
+}
+.navbar div {
+    font-size: large;
+}
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: indigo;
+    border-color: indigo;
+}
+
+.panel-primary {
+    border-color: indigo;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: indigo;
+    border-color: #6800b3;
+}
+
+.btn-primary:hover {
+    background-color: #6800b3;
+}
+thead {
+    color: #3b0066 !important;
+}
+
+.panel-heading a, .panel-heading a:link, .panel-heading a:focus, .panel-heading a:visited, .panel-heading a:hover, .panel-heading a:active {
+    color: white !important;
+    text-decoration: none;
+}
+
+.page-controls a:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.page-controls span a {
+    color: purple;
+}
+
+.page-controls {
+    font-size: x-large;
+}

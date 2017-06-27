@@ -1,0 +1,33 @@
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='pull-left col-sm-6 col-xs-12'>
+                <div class='input-group'>
+                <input id='searchbox' type='text' class='form-control' [(ngModel)]='searchFilter' placeholder="Search for Games, Channels, Statuses..." (keypress)='searchboxKeypress($event)' />
+                <span class='input-group-btn'><button class='btn btn-default' (click)='doSearch()' title='Searches Games, Channels, Statuses'>Go!</button></span>
+                </div>          
+        </div>
+        <div class='pull-right col-sm-6 col-xs-12' *ngIf='streams'>
+            <div class="font-xl page-controls text-right font-xl" *ngIf='totalStreams > 0'>
+                <span><button class='btn' (click)='prevPage()'>&lt;&lt;</button></span> page: {{page}} / {{totalPages}} <span><button class='btn' (click)='nextPage()'>&gt;&gt;</button></span>
+            </div>
+        </div>
+        <div class='clearfix'></div>
+    </div>
+</div>
+
+<div class='panel-body'>
+    <div class='panel panel-primary' *ngIf='streams'>
+        <div class='panel-heading'>
+            <div class='pull-left'><span class='hidden-xs'>"{{searchedFor}}" </span>{{pageTitle}}...</div> <div class='pull-right' *ngIf='streams' >Total: {{totalStreams}}</div>
+            <div class='clearfix'></div>
+        </div>
+    </div>
+
+    <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+
+    <div class='container-fluid'>
+        <div *ngFor='let stream of streams'>
+            <ai-channel [stream]='stream'></ai-channel>
+        </div>
+    </div>
+</div>

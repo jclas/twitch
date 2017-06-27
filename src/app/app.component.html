@@ -1,0 +1,18 @@
+<div>
+    <nav class='navbar navbar-inverse'>
+        <div class='container-fluid'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-2 col-md-1'>
+                    <a href='./'><img class='navbar-brand' src='./app/assets/images/twitch_logo_white_102_33.png' alt='Twitch {{pageTitle}}' /></a>
+                </div>
+                <div class='col-xs-12 col-sm-7  col-md-9' style='padding-top:12px; white-space:nowrap'>
+                    {{pageTitle}}
+                </div>
+                <div class='col-xs-12 col-sm-3 col-md-2 sm-text-right' style='padding-top:12px; white-space:nowrap'>{{author}}</div>
+            </div>
+        </div>
+    </nav>
+    <div class='container'>
+        <router-outlet></router-outlet>
+    </div>
+</div>

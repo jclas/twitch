@@ -1,0 +1,30 @@
+<div class='panel panel-primary' >
+    <div class='panel-heading'>
+        <span class='text-inverse'><a target='_blank' href='{{stream.channel.url}}'>{{stream.channel.display_name}}</a></span>
+    </div>
+    <div class='panel-body'>
+        <div class='row'>
+            <div class='col-md-4'>
+                <a target='_blank' href='{{stream.channel.url}}'><img class='img-responsive' src='{{stream.preview.medium}}' /></a>
+            </div>
+            <div class='col-md-5'>
+                    <div class='row'>
+                        <div class='col-xs-4' style='font-size: large'><b>Game:</b></div> <div class='col-xs-8' style='font-size: large'>{{stream.game}}</div>
+                        <div class='col-xs-12' style='margin-top: 15px' ></div>
+                        <div class='col-xs-4'><b>Channel:</b></div> <div class='col-xs-8'><a target='_blank' href='{{stream.channel.url}}'>{{stream.channel.display_name}}</a></div>
+                        <div class='col-xs-12' style='margin-top: 15px' ></div>
+                        <div class='col-xs-4'><b>Status:</b></div> <div class='col-xs-8'>{{stream.channel.status}}</div>
+                        <div class='col-xs-12' style='margin-top: 15px' ></div>
+                        <div class='col-xs-4'><b>Language:&nbsp;</b></div><div class='col-xs-8'><span class='nowrap'>{{getLanguageName(stream.channel.broadcaster_language)}} (brodcaster),</span> <span class='nowrap'>{{getLanguageName(stream.channel.language)}} (origin)</span></div>
+                        <div class='col-xs-12' style='margin-top: 15px' ></div>
+                    </div>
+            </div>
+            <div class='col-md-3'>
+                    <div><b>Created:</b> {{stream.created_at | date:'shortDate' }} {{stream.created_at | date:'shortTime' }}</div>
+                    <div><b>Ave FPS:</b> {{stream.average_fps | number:'1.2-2'}}</div>
+                    <div><b>Mature?:</b> <span class="{{stream.channel.mature ? 'text-danger' : ''}}">{{stream.channel.mature ? 'Yes' : 'No'}}</span></div>
+                    <div><b>Viewers:</b> {{stream.viewers}}</div>
+            </div>
+        </div>
+    </div>
+</div>
