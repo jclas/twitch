@@ -36,6 +36,6 @@
         defaultExtension: 'js'
       }
     },
-    baseURL: '/twitch/src/'
+    baseURL: '/twitch/'
   });
 })(this);
