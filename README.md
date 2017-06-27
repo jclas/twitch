@@ -2,7 +2,7 @@ This app searches live Twitch streams
 
 1) Download this repo and unzip it.
 
-2) You must have Node already installed on your computer 
+2) You must have Node already installed on your computer. (I use Visual Studio Code which already has it.)
 
 3) Open a command prompt in the project's root directory. (where "package.json" is)
 
