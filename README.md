@@ -1,5 +1,11 @@
 This app searches live Twitch streams
 
+https://jclas.github.io/twitch-deploy 
+
+
+But to run it locally and have it served up by node...
+
+
 1) Download this repo and unzip it.
 
 2) You must have Node already installed on your computer. (I use Visual Studio Code which already has it.)
