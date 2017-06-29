@@ -1,10 +1,9 @@
 This app searches live Twitch streams
 
-https://jclas.github.io/twitch-deploy 
+**Here is the demo for this app: https://jclas.github.io/twitch-deploy**
 
 
-But to run it locally and have it served up by node...
-
+To run it locally and have it served up by node...
 
 1) Download this repo and unzip it.
 
